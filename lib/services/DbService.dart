@@ -27,15 +27,15 @@ class DbService {
           debugPrint("Connected!");
           return 1;
         } else {
-          debugPrint("DkPrint: Can't connect to db.");
+          debugPrint("Print: Can't connect to db.");
           return 0;
         }
       } else {
-        debugPrint("DkPrint: Can't connect to db. Some required fields are empty");
+        debugPrint("Print: Can't connect to db. Some required fields are empty");
         return 0;
       }
     } catch (e) {
-      debugPrint("DkPrintError on QueryFromDb.connect: $e");
+      debugPrint("PrintError on QueryFromDb.connect: $e");
       return 0;
     }
   }
@@ -56,7 +56,7 @@ class DbService {
           }
         }
       } catch (e) {
-        debugPrint("DkPrintError on QueryFromApi.getFirm: ${e.toString()}");
+        debugPrint("PrintError on QueryFromApi.getFirm: ${e.toString()}");
       }
     }
     return null;
@@ -87,7 +87,7 @@ class DbService {
           }
         }
       } catch (e) {
-        debugPrint("DkPrintError from getCategories(): ${e.toString()}");
+        debugPrint("PrintError from getCategories(): ${e.toString()}");
       }
     }
     return [];
@@ -123,7 +123,7 @@ class DbService {
           }
         }
       } catch (e) {
-        debugPrint("DkPrintError from getResources(): ${e.toString()}");
+        debugPrint("PrintError from getResources(): ${e.toString()}");
       }
     }
     return [];
@@ -159,7 +159,7 @@ class DbService {
           }
         }
       } catch (e) {
-        debugPrint("DkPrintError from getResPrices(): ${e.toString()}");
+        debugPrint("PrintError from getResPrices(): ${e.toString()}");
       }
     }
     return [];
@@ -187,7 +187,7 @@ class DbService {
           }
         }
       } catch (e) {
-        debugPrint("DkPrintError from getResPriceGroup(): ${e.toString()}");
+        debugPrint("PrintError from getResPriceGroup(): ${e.toString()}");
       }
     }
     return [];
@@ -222,7 +222,7 @@ class DbService {
           }
         }
       } catch (e) {
-        debugPrint("DkPrintError from getImage(): ${e.toString()}");
+        debugPrint("PrintError from getImage(): ${e.toString()}");
       }
     }
     return [];

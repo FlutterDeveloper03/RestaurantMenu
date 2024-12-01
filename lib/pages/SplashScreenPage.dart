@@ -292,7 +292,7 @@ class SplashScreenPageState extends State<SplashScreenPage> with SingleTickerPro
                     child: Column(
                       children: [
                         Text(
-                          "SAP",
+                          "RESTO",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 91,
